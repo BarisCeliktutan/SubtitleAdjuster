@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>575</width>
+    <width>599</width>
     <height>148</height>
    </rect>
   </property>
@@ -20,24 +20,64 @@
   <widget class="QPushButton" name="btnAdjust">
    <property name="geometry">
     <rect>
-     <x>250</x>
-     <y>110</y>
+     <x>260</x>
+     <y>112</y>
      <width>75</width>
      <height>23</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(137, 160, 116);
+background-color:rgb(40, 0, 0);
+border-radius: 10px;
+</string>
+   </property>
    <property name="text">
     <string>Adjust</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
    </property>
   </widget>
   <widget class="QComboBox" name="cbWhat">
    <property name="geometry">
     <rect>
-     <x>258</x>
-     <y>42</y>
-     <width>43</width>
+     <x>268</x>
+     <y>44</y>
+     <width>47</width>
      <height>22</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Javanese Text</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
    </property>
    <item>
     <property name="text">
@@ -63,11 +103,22 @@
   <widget class="QLabel" name="lblHowMany">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>74</y>
-     <width>75</width>
+     <x>162</x>
+     <y>78</y>
+     <width>103</width>
      <height>22</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Javanese Text</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(137, 160, 116);</string>
    </property>
    <property name="text">
     <string>How Many ms:</string>
@@ -79,11 +130,22 @@
   <widget class="QLabel" name="lblWhat">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>42</y>
-     <width>75</width>
+     <x>222</x>
+     <y>44</y>
+     <width>43</width>
      <height>22</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Javanese Text</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(137, 160, 116);</string>
    </property>
    <property name="text">
     <string>What:</string>
@@ -95,8 +157,8 @@
   <widget class="QComboBox" name="cbAddSub">
    <property name="geometry">
     <rect>
-     <x>330</x>
-     <y>75</y>
+     <x>340</x>
+     <y>77</y>
      <width>43</width>
      <height>22</height>
     </rect>
@@ -115,31 +177,54 @@
   <widget class="QLineEdit" name="entHowMany">
    <property name="geometry">
     <rect>
-     <x>258</x>
-     <y>76</y>
+     <x>268</x>
+     <y>78</y>
      <width>67</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Javanese Text</family>
+     <pointsize>10</pointsize>
+    </font>
    </property>
   </widget>
   <widget class="QLineEdit" name="entFileName">
    <property name="geometry">
     <rect>
-     <x>75</x>
+     <x>94</x>
      <y>12</y>
      <width>475</width>
      <height>20</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Calibri Light</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
   </widget>
   <widget class="QLabel" name="lblFileName">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>10</y>
-     <width>50</width>
+     <x>22</x>
+     <y>12</y>
+     <width>65</width>
      <height>22</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Javanese Text</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(137, 160, 116);</string>
    </property>
    <property name="text">
     <string>File Path:</string>
@@ -148,6 +233,39 @@
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
+  <widget class="QLabel" name="lblBackground">
+   <property name="geometry">
+    <rect>
+     <x>-366</x>
+     <y>-196</y>
+     <width>1013</width>
+     <height>801</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../../../../D/Pictures &amp; Stuff/The Deepest, Sharpest Infrared Image of the Universe.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>lblBackground</zorder>
+  <zorder>btnAdjust</zorder>
+  <zorder>cbWhat</zorder>
+  <zorder>lblHowMany</zorder>
+  <zorder>lblWhat</zorder>
+  <zorder>cbAddSub</zorder>
+  <zorder>entHowMany</zorder>
+  <zorder>entFileName</zorder>
+  <zorder>lblFileName</zorder>
  </widget>
  <resources/>
  <connections/>
