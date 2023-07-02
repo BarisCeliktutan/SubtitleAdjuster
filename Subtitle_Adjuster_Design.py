@@ -107,7 +107,7 @@ class Ui_winSubtitleAdjuster(object):
         font.setPointSize(10)
         self.lblBackground.setFont(font)
         self.lblBackground.setText("")
-        self.lblBackground.setPixmap(QtGui.QPixmap("C:\\Users\\baris\\Desktop\\Projects\\Subtitle_Adjuster\\The Deepest, Sharpest Infrared Image of the Universe.jpg"))
+        self.lblBackground.setPixmap(QtGui.QPixmap("C:\\Users\\baris\\Desktop\\Projects\\Subtitle_Adjuster\\background.jpg"))
         self.lblBackground.setScaledContents(True)
         self.lblBackground.setObjectName("lblBackground")
         self.lblBackground.raise_()
