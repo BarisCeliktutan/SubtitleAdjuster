@@ -15,7 +15,7 @@ class Ui_winSubtitleAdjuster(object):
     def setupUi(self, winSubtitleAdjuster):
         winSubtitleAdjuster.setObjectName("winSubtitleAdjuster")
         winSubtitleAdjuster.resize(576, 226)
-        icon = QtGui.QIcon.fromTheme("C:\\Users\\baris\\Desktop\\Projects\\Subtitle_Adjuster\\icon.ico")
+        icon = QtGui.QIcon.fromTheme("icon.ico")
         winSubtitleAdjuster.setWindowIcon(icon)
         self.btnAdjust = QtWidgets.QPushButton(winSubtitleAdjuster)
         self.btnAdjust.setGeometry(QtCore.QRect(256, 162, 75, 23))
