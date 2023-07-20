@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QWidget, QApplication, QMessageBox
+from PyQt5.QtWidgets import QWidget, QApplication, QMessageBox, QFileDialog
 from Subtitle_Adjuster_Design import Ui_winSubtitleAdjuster
 
 
@@ -118,8 +118,19 @@ class Win(QWidget):
         super().__init__()
         self.win = Ui_winSubtitleAdjuster()
         self.win.setupUi(self)
+        self.win.toolPath.clicked.connect(self.fetch_path)
         self.win.btnAdjust.clicked.connect(self.adjust)
         self.win.cbWhat.currentTextChanged.connect(self.how_many)
+
+    def fetch_path(self):
+        options = QFileDialog.Options()
+        path, _ = QFileDialog.getOpenFileName(caption="Select the Subtitle",
+                                                   directory="",
+                                                   filter="Pictures (*.srt);;"
+                                                          "All Files (*)",
+                                                   options=options)
+
+        self.win.entFileName.setText(path.replace("\\", "/")[:-4])
 
     def how_many(self):
         self.win.lblHowMany.setText(f"How Many {self.win.cbWhat.currentText()}:")

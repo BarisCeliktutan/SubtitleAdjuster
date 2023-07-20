@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>winSubtitleRename</class>
+ <widget class="QWidget" name="winSubtitleRename">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>657</width>
+    <height>396</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Subtitle Rename Program</string>
+  </property>
+  <widget class="QLineEdit" name="entPath">
+   <property name="geometry">
+    <rect>
+     <x>102</x>
+     <y>30</y>
+     <width>441</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri Light</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(244,244,244,150);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRenameSub">
+   <property name="geometry">
+    <rect>
+     <x>134</x>
+     <y>330</y>
+     <width>141</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 221, 117);
+background-color:rgb(60, 0, 0);
+border-radius: 10px;
+</string>
+   </property>
+   <property name="text">
+    <string>Rename Subtitles</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblBackground">
+   <property name="geometry">
+    <rect>
+     <x>-288</x>
+     <y>-156</y>
+     <width>1013</width>
+     <height>801</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../../../../D/Pictures &amp; Stuff/The Deepest, Sharpest Infrared Image of the Universe.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblFileName">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>65</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Javanese Text</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 221, 117);
+</string>
+   </property>
+   <property name="text">
+    <string>File Path:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnDelete">
+   <property name="geometry">
+    <rect>
+     <x>288</x>
+     <y>330</y>
+     <width>133</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 221, 117);
+background-color:rgb(60, 0, 0);
+border-radius: 10px;
+</string>
+   </property>
+   <property name="text">
+    <string>Delete Extra Folders</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="entEpisodes">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>82</y>
+     <width>473</width>
+     <height>239</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(244,244,244,150);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblEpisodes">
+   <property name="geometry">
+    <rect>
+     <x>26</x>
+     <y>88</y>
+     <width>65</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Javanese Text</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 221, 117);
+</string>
+   </property>
+   <property name="text">
+    <string>Episodes:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRenameEpisodes">
+   <property name="geometry">
+    <rect>
+     <x>438</x>
+     <y>330</y>
+     <width>117</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 221, 117);
+background-color:rgb(60, 0, 0);
+border-radius: 10px;
+</string>
+   </property>
+   <property name="text">
+    <string>Rename Episodes</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolPath">
+   <property name="geometry">
+    <rect>
+     <x>546</x>
+     <y>30</y>
+     <width>27</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(244,244,244,150);</string>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+  <zorder>lblBackground</zorder>
+  <zorder>entPath</zorder>
+  <zorder>btnRenameSub</zorder>
+  <zorder>lblFileName</zorder>
+  <zorder>btnDelete</zorder>
+  <zorder>entEpisodes</zorder>
+  <zorder>lblEpisodes</zorder>
+  <zorder>btnRenameEpisodes</zorder>
+  <zorder>toolPath</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

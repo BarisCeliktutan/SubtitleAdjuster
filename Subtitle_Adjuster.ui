@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>599</width>
-    <height>148</height>
+    <width>576</width>
+    <height>226</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,8 +20,8 @@
   <widget class="QPushButton" name="btnAdjust">
    <property name="geometry">
     <rect>
-     <x>260</x>
-     <y>112</y>
+     <x>256</x>
+     <y>162</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -38,8 +38,8 @@
     <bool>false</bool>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(137, 160, 116);
-background-color:rgb(40, 0, 0);
+    <string notr="true">color: rgb(255, 221, 117);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(52, 0, 0, 255), stop:0.113636 rgba(91, 34, 34, 255), stop:0.238636 rgba(128, 32, 32, 255), stop:0.420455 rgba(122, 42, 42, 255), stop:0.585227 rgba(174, 68, 68, 255), stop:0.693182 rgba(174, 71, 71, 255), stop:0.789773 rgba(178, 66, 66, 255), stop:0.935 rgba(239, 25, 25, 255));
 border-radius: 10px;
 </string>
    </property>
@@ -65,8 +65,8 @@ border-radius: 10px;
   <widget class="QComboBox" name="cbWhat">
    <property name="geometry">
     <rect>
-     <x>268</x>
-     <y>44</y>
+     <x>264</x>
+     <y>80</y>
      <width>47</width>
      <height>22</height>
     </rect>
@@ -103,8 +103,8 @@ border-radius: 10px;
   <widget class="QLabel" name="lblHowMany">
    <property name="geometry">
     <rect>
-     <x>162</x>
-     <y>78</y>
+     <x>158</x>
+     <y>114</y>
      <width>103</width>
      <height>22</height>
     </rect>
@@ -118,7 +118,8 @@ border-radius: 10px;
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(137, 160, 116);</string>
+    <string notr="true">color: rgb(255, 221, 117);
+</string>
    </property>
    <property name="text">
     <string>How Many ms:</string>
@@ -130,8 +131,8 @@ border-radius: 10px;
   <widget class="QLabel" name="lblWhat">
    <property name="geometry">
     <rect>
-     <x>222</x>
-     <y>44</y>
+     <x>218</x>
+     <y>80</y>
      <width>43</width>
      <height>22</height>
     </rect>
@@ -145,7 +146,8 @@ border-radius: 10px;
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(137, 160, 116);</string>
+    <string notr="true">color: rgb(255, 221, 117);
+</string>
    </property>
    <property name="text">
     <string>What:</string>
@@ -157,8 +159,8 @@ border-radius: 10px;
   <widget class="QComboBox" name="cbAddSub">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>77</y>
+     <x>336</x>
+     <y>113</y>
      <width>43</width>
      <height>22</height>
     </rect>
@@ -177,8 +179,8 @@ border-radius: 10px;
   <widget class="QLineEdit" name="entHowMany">
    <property name="geometry">
     <rect>
-     <x>268</x>
-     <y>78</y>
+     <x>264</x>
+     <y>114</y>
      <width>67</width>
      <height>20</height>
     </rect>
@@ -193,9 +195,9 @@ border-radius: 10px;
   <widget class="QLineEdit" name="entFileName">
    <property name="geometry">
     <rect>
-     <x>94</x>
-     <y>12</y>
-     <width>475</width>
+     <x>96</x>
+     <y>40</y>
+     <width>409</width>
      <height>20</height>
     </rect>
    </property>
@@ -209,8 +211,8 @@ border-radius: 10px;
   <widget class="QLabel" name="lblFileName">
    <property name="geometry">
     <rect>
-     <x>22</x>
-     <y>12</y>
+     <x>24</x>
+     <y>40</y>
      <width>65</width>
      <height>22</height>
     </rect>
@@ -224,7 +226,8 @@ border-radius: 10px;
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(137, 160, 116);</string>
+    <string notr="true">color: rgb(255, 221, 117);
+</string>
    </property>
    <property name="text">
     <string>File Path:</string>
@@ -233,13 +236,26 @@ border-radius: 10px;
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
+  <widget class="QToolButton" name="toolPath">
+   <property name="geometry">
+    <rect>
+     <x>508</x>
+     <y>40</y>
+     <width>27</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
   <widget class="QLabel" name="lblBackground">
    <property name="geometry">
     <rect>
-     <x>-366</x>
-     <y>-196</y>
-     <width>1013</width>
-     <height>801</height>
+     <x>-68</x>
+     <y>-92</y>
+     <width>651</width>
+     <height>365</height>
     </rect>
    </property>
    <property name="font">
@@ -251,7 +267,7 @@ border-radius: 10px;
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../../../../D/Pictures &amp; Stuff/The Deepest, Sharpest Infrared Image of the Universe.jpg</pixmap>
+    <pixmap>../../../../../D/Pictures &amp; Stuff/Cosmos_background.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -266,6 +282,7 @@ border-radius: 10px;
   <zorder>entHowMany</zorder>
   <zorder>entFileName</zorder>
   <zorder>lblFileName</zorder>
+  <zorder>toolPath</zorder>
  </widget>
  <resources/>
  <connections/>
