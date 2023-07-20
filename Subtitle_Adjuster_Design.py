@@ -113,7 +113,7 @@ class Ui_winSubtitleAdjuster(object):
         font.setPointSize(10)
         self.lblBackground.setFont(font)
         self.lblBackground.setText("")
-        self.lblBackground.setPixmap(QtGui.QPixmap("Cosmos_background.png"))
+        self.lblBackground.setPixmap(QtGui.QPixmap("C:\D\Pictures & Stuff\Cosmos_background.png"))
         self.lblBackground.setScaledContents(True)
         self.lblBackground.setObjectName("lblBackground")
         self.lblBackground.raise_()

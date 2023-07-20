@@ -126,7 +126,7 @@ class Win(QWidget):
         options = QFileDialog.Options()
         path, _ = QFileDialog.getOpenFileName(caption="Select the Subtitle",
                                                    directory="",
-                                                   filter="Pictures (*.srt);;"
+                                                   filter="Subtitles (*.srt);;"
                                                           "All Files (*)",
                                                    options=options)
 

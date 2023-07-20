@@ -48,7 +48,7 @@ class Ui_winSubtitleRename(object):
         font.setPointSize(10)
         self.lblBackground.setFont(font)
         self.lblBackground.setText("")
-        self.lblBackground.setPixmap(QtGui.QPixmap("background.jpg"))
+        self.lblBackground.setPixmap(QtGui.QPixmap("../../../../../D/Pictures & Stuff/The Deepest, Sharpest Infrared Image of the Universe.jpg"))
         self.lblBackground.setScaledContents(True)
         self.lblBackground.setObjectName("lblBackground")
         self.lblFileName = QtWidgets.QLabel(winSubtitleRename)
