@@ -39,9 +39,10 @@ class SubtitleNames(QWidget):
         os.chdir(path)
         episodes = self.win.entEpisodes.toPlainText().split(", ")
         for idx, episode in enumerate(os.listdir("./")):
-            print(episode)
             if ".mp4" in episode:
                 os.rename(episode, f'{idx + 1} - {episodes[idx]}.mp4')
+            if ".mkv" in episode:
+                os.rename(episode, f'{idx + 1} - {episodes[idx]}.mkv')
 
     def delete(self):
         p = self.win.entPath.text().replace("\\", "/")
@@ -49,11 +50,7 @@ class SubtitleNames(QWidget):
         for folder in os.listdir(path):
             if ".srt" not in folder:
                 new_path = os.path.join(path, folder)
-                print(path)
-                try:
-                    shutil.rmtree(new_path)
-                except OSError as e:
-                    print(f'Error: {folder}: {e.strerror}')
+                shutil.rmtree(new_path)
 
 
 app = QApplication([])
