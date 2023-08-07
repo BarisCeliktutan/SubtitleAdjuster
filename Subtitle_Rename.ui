@@ -39,7 +39,7 @@
   <widget class="QPushButton" name="btnRenameSub">
    <property name="geometry">
     <rect>
-     <x>134</x>
+     <x>156</x>
      <y>330</y>
      <width>141</width>
      <height>23</height>
@@ -133,51 +133,6 @@ border-radius: 10px;
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="btnDelete">
-   <property name="geometry">
-    <rect>
-     <x>288</x>
-     <y>330</y>
-     <width>133</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Times New Roman</family>
-     <pointsize>10</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="autoFillBackground">
-    <bool>false</bool>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(255, 221, 117);
-background-color:rgb(60, 0, 0);
-border-radius: 10px;
-</string>
-   </property>
-   <property name="text">
-    <string>Delete Extra Folders</string>
-   </property>
-   <property name="checkable">
-    <bool>false</bool>
-   </property>
-   <property name="checked">
-    <bool>false</bool>
-   </property>
-   <property name="autoDefault">
-    <bool>false</bool>
-   </property>
-   <property name="default">
-    <bool>false</bool>
-   </property>
-   <property name="flat">
-    <bool>false</bool>
-   </property>
-  </widget>
   <widget class="QTextEdit" name="entEpisodes">
    <property name="geometry">
     <rect>
@@ -222,7 +177,7 @@ border-radius: 10px;
   <widget class="QPushButton" name="btnRenameEpisodes">
    <property name="geometry">
     <rect>
-     <x>438</x>
+     <x>382</x>
      <y>330</y>
      <width>117</width>
      <height>23</height>
@@ -284,7 +239,6 @@ border-radius: 10px;
   <zorder>entPath</zorder>
   <zorder>btnRenameSub</zorder>
   <zorder>lblFileName</zorder>
-  <zorder>btnDelete</zorder>
   <zorder>entEpisodes</zorder>
   <zorder>lblEpisodes</zorder>
   <zorder>btnRenameEpisodes</zorder>
