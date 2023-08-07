@@ -1,7 +1,7 @@
 import os
 import shutil
 import Subtitle_Rename_Design
-from PyQt5.QtWidgets import QWidget, QApplication, QFileDialog
+from PyQt5.QtWidgets import QWidget, QApplication, QFileDialog, QMessageBox
 
 
 class SubtitleNames(QWidget):
@@ -33,6 +33,7 @@ class SubtitleNames(QWidget):
 
             shutil.move(f"{path}/{folder}/{idx+1} - {episodes[idx]}.srt", path)
         os.chdir("C:/D")
+        QMessageBox.information(self, "Done", "Successful!")
 
     def rename_episodes(self):
         path = self.win.entPath.text().replace("\\", "/")
@@ -40,9 +41,10 @@ class SubtitleNames(QWidget):
         episodes = self.win.entEpisodes.toPlainText().split(", ")
         for idx, episode in enumerate(os.listdir("./")):
             if ".mp4" in episode:
-                os.rename(episode, f'{idx + 1} - {episodes[idx]}.mp4')
+                os.rename(episode, f'{idx + 1} - {episodes[idx].replace(":", " -")}.mp4')
             if ".mkv" in episode:
-                os.rename(episode, f'{idx + 1} - {episodes[idx]}.mkv')
+                os.rename(episode, f'{idx + 1} - {episodes[idx].replace(":", " -")}.mkv')
+        QMessageBox.information(self, "Done", "Successful!")
 
     def delete(self):
         p = self.win.entPath.text().replace("\\", "/")

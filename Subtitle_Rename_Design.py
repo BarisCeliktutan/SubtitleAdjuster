@@ -15,7 +15,7 @@ class Ui_winSubtitleRename(object):
     def setupUi(self, winSubtitleRename):
         winSubtitleRename.setObjectName("winSubtitleRename")
         winSubtitleRename.resize(657, 396)
-        icon = QtGui.QIcon.fromTheme("icon.ico")
+        icon = QtGui.QIcon.fromTheme("C:/Users/baris/Desktop/Projects/Subtitle_Adjuster/icon.ico")
         winSubtitleRename.setWindowIcon(icon)
         self.entPath = QtWidgets.QLineEdit(winSubtitleRename)
         self.entPath.setGeometry(QtCore.QRect(102, 30, 441, 20))
@@ -50,7 +50,7 @@ class Ui_winSubtitleRename(object):
         font.setPointSize(10)
         self.lblBackground.setFont(font)
         self.lblBackground.setText("")
-        self.lblBackground.setPixmap(QtGui.QPixmap("background.jpg"))
+        self.lblBackground.setPixmap(QtGui.QPixmap("C:/Users/baris/Desktop/Projects/Subtitle_Adjuster/background.jpg"))
         self.lblBackground.setScaledContents(True)
         self.lblBackground.setObjectName("lblBackground")
         self.lblFileName = QtWidgets.QLabel(winSubtitleRename)
