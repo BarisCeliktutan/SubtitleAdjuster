@@ -14,9 +14,14 @@ class SubtitleNames(QWidget):
 
     def fetch_path(self):
         options = QFileDialog.Options()
-        path = QFileDialog.getExistingDirectory(caption="Select the directory to season",
-                                                   directory="",
-                                                   options=options)
+        try:
+            path = QFileDialog.getExistingDirectory(caption="Select the directory to season",
+                                                    directory="D:/Series",
+                                                    options=options)
+        except:
+            path = QFileDialog.getExistingDirectory(caption="Select the directory to season",
+                                                    directory="",
+                                                    options=options)
         self.win.entPath.setText(path)
 
     def rename_sub(self):
@@ -26,7 +31,7 @@ class SubtitleNames(QWidget):
         episodes = self.win.entEpisodes.toPlainText().split(", ")
         for idx, folder in enumerate(os.listdir(path)):
             os.rename(folder, f'{idx + 1} - {episodes[idx]}.srt')
-        os.chdir("C:/D")
+        os.chdir("D:")
         QMessageBox.information(self, "Done", "Successful!")
 
     def rename_episodes(self):
@@ -38,6 +43,8 @@ class SubtitleNames(QWidget):
                 os.rename(episode, f'{idx + 1} - {episodes[idx].replace(":", " -")}.mp4')
             if ".mkv" in episode:
                 os.rename(episode, f'{idx + 1} - {episodes[idx].replace(":", " -")}.mkv')
+            if ".ts" in episode:
+                os.rename(episode, f'{idx + 1} - {episodes[idx].replace(":", " -")}.ts')
         QMessageBox.information(self, "Done", "Successful!")
 
 
